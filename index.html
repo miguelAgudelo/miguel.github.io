@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Demostracion</title>
+
+</head>
+<body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/select2.min.js"></script>
+  	<script type="text/javascript">
+    $(document).ready(function(){ 
+    $('.carousel').carousel({
+      time_constant:300,
+      dist: 0,
+      shift: 3,
+      padding: 3,
+      indicators: false,
+      no_wrap: false,
+    }); 
+    $('.slider').slider({
+    	full_width: true,
+    	indicators: false,
+    	height: 500,
+    });
+    $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+    $('.modal-trigger').leanModal();
+    });
+  </script>
+  
+  <div> 
+    <nav id="mynav">
+      <div class="nav-wrapper">
+        <a href="#"><img src="img/figologo.png" id="logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#" id="navtext">Inicio</a></li>
+          <li><a href="conocenos.html" id="navtext">Conocenos</a></li>
+          <li><a href="#" id="navtext">Galeria</a></li>
+          <li><a href="menu.html" id="navtext">Menu</a></li>
+          <li><a href="contactanos.html" id="navtextend">Contactanos</a></li>
+	      </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/img1.jpg">
+        <div class="caption center-align">
+          <h3 id="pubtext">Aqui la Publicidad Pricipal</h3>
+          <h5 class="light grey-text text-lighten-3" id="pubtext2">Una breve descripcion para llamar la atencion</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/img2.jpg"> 
+        <div class="caption left-align">
+          <h3 id="pubtext">Aqui la Publicidad Secundaria</h3>
+          <h5 class="light grey-text text-lighten-3" id="pubtext2">Una breve descripcion para llamar la atencion</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/img3.jpg"> 
+        <div class="caption right-align">
+          <h3 id="pubtext">Aqui la Publicidad Secundaria</h3>
+          <h5 class="light grey-text text-lighten-3" id="pubtext2">Una breve descripcion para llamar la atencion</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/img4.jpg"> 
+        <div class="caption center-align">
+          <h3 id="pubtext">Aqui la Publicidad Secundaria</h3>
+          <h5 class="light grey-text text-lighten-3" id="pubtext2">Una breve descripcion para llamar la atencion</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
+  <div class="row" id="content1">
+    <div class="col s12 m6 l6">
+      <div class="card" id="cardback">
+        <div class="card-content">
+          <center><p><a href="#" id="titlecard">Conocenos</a></p></center>
+        </div>
+        <div class="card-image waves-effect waves-block waves-light">
+           <a href="conocenos.html"><img class="activator" src="img/img4.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l6">
+      <div class="card" id="cardback">
+        <div class="card-content">
+          <center><p><a href="#" id="titlecard">Galeria</a></p></center>
+        </div>
+        <div class="card-image waves-effect waves-block waves-light">
+           <a href="#"><img class="activator" src="img/img5.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container hide-on-small">
+    <ul>
+      <li><p id="textparallax">Aqui Otra Publicidad Pricipal</p></li>
+      <li><div class="parallax"><img src="img/parallax1.jpg" id="parallax1"></div></li>
+    </ul>
+  </div>
+
+  <div>
+    <p id="textparallax">Productos Destacados</p>
+    <center><div id="franja"></div></center>
+  </div>
+  
+  <div class="row" id="content">
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto1.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto3.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="content">
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto3.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto1.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="content">
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto3.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s14 m4 l4">
+      <div class="card" id="cardback2">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/producto1.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator amber-text text-darken-3">Nombre de Producto<i class="right" id="cardtext">Ver mas</i></span>
+        </div>
+        <div class="card-reveal" id="panelcard">
+          <span class="card-title">Nombre del Producto<i class="right" id="cardtext">Cerrar</i></span>
+          <p>Aqui podra escribir una descripcion atractiva y mas detallada del producto</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 id="footertext">Figos Pepitos House</h5>
+          <p id="footertext">en esta seccion podria colocar una descripcion breve de la empresa y algunos datos de contacto</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 id="footertext">Siguenos</h5>
+            <ul>
+              <li><a id="footertext2" href="#!">Facebook</a></li>
+              <li><a id="footertext2" href="#!">Twitter</a></li>
+              <li><a id="footertext2" href="#!">Instagram</a></li>
+              <li><a id="footertext2" href="#!">Google +</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2016 Copyright Text
+        <a id="footertext" href="#!">Mas Links</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
